@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D10763E11475BC69B8F30AE /* Pods_TestFoldingCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB88C616A5BCA3156638CBA /* Pods_TestFoldingCell.framework */; };
 		755E83BF205FE441001D21B7 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E83BE205FE441001D21B7 /* TestTableViewController.swift */; };
 		755E83C320610BF5001D21B7 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E83C220610BF5001D21B7 /* TestTableViewCell.swift */; };
 		7595BAB5205ABF4B00E70E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595BAB4205ABF4B00E70E56 /* AppDelegate.swift */; };
@@ -27,9 +26,6 @@
 		7595BABB205ABF4B00E70E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7595BABE205ABF4B00E70E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7595BAC0205ABF4B00E70E56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC16AEC0F3B04ECF665D9D73 /* Pods-TestFoldingCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFoldingCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestFoldingCell/Pods-TestFoldingCell.debug.xcconfig"; sourceTree = "<group>"; };
-		EBA63507CD46F2E9A201C04F /* Pods-TestFoldingCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFoldingCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestFoldingCell/Pods-TestFoldingCell.release.xcconfig"; sourceTree = "<group>"; };
-		EDB88C616A5BCA3156638CBA /* Pods_TestFoldingCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFoldingCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D10763E11475BC69B8F30AE /* Pods_TestFoldingCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +75,6 @@
 		BC98D92E5EEC5E7A995578DE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC16AEC0F3B04ECF665D9D73 /* Pods-TestFoldingCell.debug.xcconfig */,
-				EBA63507CD46F2E9A201C04F /* Pods-TestFoldingCell.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -89,7 +82,6 @@
 		E519C215B4237353C4D2FF41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EDB88C616A5BCA3156638CBA /* Pods_TestFoldingCell.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,12 +93,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7595BAC3205ABF4B00E70E56 /* Build configuration list for PBXNativeTarget "TestFoldingCell" */;
 			buildPhases = (
-				AD763CC039033D37B3BD8F96 /* [CP] Check Pods Manifest.lock */,
 				7595BAAD205ABF4B00E70E56 /* Sources */,
 				7595BAAE205ABF4B00E70E56 /* Frameworks */,
 				7595BAAF205ABF4B00E70E56 /* Resources */,
-				E1ED1655E2EAB2F7155E6DFA /* [CP] Embed Pods Frameworks */,
-				764B5C4713CD1CD491F109DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,60 +152,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		764B5C4713CD1CD491F109DC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestFoldingCell/Pods-TestFoldingCell-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD763CC039033D37B3BD8F96 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TestFoldingCell-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1ED1655E2EAB2F7155E6DFA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TestFoldingCell/Pods-TestFoldingCell-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestFoldingCell/Pods-TestFoldingCell-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7595BAAD205ABF4B00E70E56 /* Sources */ = {
@@ -361,7 +296,6 @@
 		};
 		7595BAC4205ABF4B00E70E56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC16AEC0F3B04ECF665D9D73 /* Pods-TestFoldingCell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,7 +312,6 @@
 		};
 		7595BAC5205ABF4B00E70E56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBA63507CD46F2E9A201C04F /* Pods-TestFoldingCell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
